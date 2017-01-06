@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <script src="js/angular.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mou1.js"></script>
+    <script src="js/mou.js"></script>
+</head>
+<style>
+    html{
+        width:100%;
+        height: 100%;
+    }
+</style>
+<body>
+
+<div class="mui-slider">
+    <div class="mui-slider-group mui-slider-loop">
+        <!--支持循环，需要重复图片节点-->
+        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/4.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="images/1.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="images/2.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="images/3.jpg" /></a></div>
+        <div class="mui-slider-item"><a href="#"><img src="images/4.jpg" /></a></div>
+        <!--支持循环，需要重复图片节点-->
+        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/1.jpg" /></a></div>
+    </div>
+</div>
+<ul class="mui-table-view" ng-repeat="aa in con">
+    <li class="mui-table-view-cell"><a href="#/cc/{{aa.id}}">{{aa.title}}</a></li>
+</ul>
+</body>
+</html>

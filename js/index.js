@@ -1,0 +1,11 @@
+angular.module('myapp',['ngRoute','ngAnimate','control','series']).config(function($routeProvider){
+        $routeProvider
+        .when("/aa",{templateUrl:"aa.html",
+            controller:'bb'
+        })
+        .when("/bb",{templateUrl:"bb.html",
+            controller:'aa'})
+        .when("/cc/:id",{templateUrl:"cc.html",
+            controller:'cc'
+        })
+})
